@@ -1,0 +1,43 @@
+.container-2 {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+  grid-template-rows: auto 1fr;
+  margin-top: 250px;
+  margin-bottom: 250px;
+}
+
+.avatar {
+  display: grid;
+  grid-column: 3/4;
+  grid-row: 1/3;
+  justify-items: center;
+  margin: 0px;
+  align-items: center;
+
+}
+img {
+  border-top-left-radius: 300px;
+  border-top-right-radius: 300px;
+  border-top: 300px;
+  border-bottom: 300px;
+}
+
+.title {
+  display: grid;
+  font-size: 20pt;
+  font-family: "Unbounded";
+  grid-column: 2/4;
+  grid-row: 1/2;
+}
+
+.text {
+  display: grid;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  justify-content: left;
+  font-family: "Lato";
+  text-align: justify;
+  font-size: 20px;
+  padding-right: 50px;
+  margin-top: -6px;
+}
