@@ -76,7 +76,7 @@ p {
 .card-img img {
   display: grid;
   height: 629.69px;
-  object-fit: cover;
+  object-fit:cover;
   vertical-align: middle;
 }
 
@@ -97,6 +97,7 @@ p {
   grid-row: 2/3;
   font-family: "Lato";
   justify-content: center;
+
 }
 
 .card-text{

@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+.container-4 {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+  grid-template-areas:
+    "ppal-title ppal-title ppal-title ppal-title";
+  margin-top: 250px;
+  margin-bottom: 250px;
+  overflow: hidden;
+}
+
+
+.icons{
+  display: inline-block;
+  grid-column: 2/4;
+  grid-row: 2/3;
+
+}
+
+img{
+ width: min-content;
+  padding: 25px;
+ object-fit:cover;
+ width: 100px;
+ height: 100px;
+}
+
+h4{
+  display: grid;
+  grid-row: 2/3;
+}
+
+h2{
+  display: grid;
+  grid-area: ppal-title;
+  font-size: 30px;
+  font-family: "Unbounded";
+  grid-column: 2/4;
+  grid-row: 1/2;}
