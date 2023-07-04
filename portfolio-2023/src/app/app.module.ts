@@ -8,6 +8,7 @@ import { LandingPageComponent } from './Components/landing-page/landing-page.com
 import { ProjectsComponent } from './Components/projects/projects.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { SkillsComponent } from './Components/skills/skills.component';
+import { ContactComponent } from './Components/contact/contact.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +17,8 @@ import { SkillsComponent } from './Components/skills/skills.component';
     LandingPageComponent,
     ProjectsComponent,
     FooterComponent,
-    SkillsComponent
+    SkillsComponent,
+    ContactComponent
  ],
   imports: [
     BrowserModule,
