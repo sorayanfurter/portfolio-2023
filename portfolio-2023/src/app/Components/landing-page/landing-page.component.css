@@ -80,7 +80,7 @@
     text-align: center;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 60px;
+    margin-top: 150px;
   }
 
   .button-style {
@@ -300,6 +300,11 @@
   main {
     display: grid;
   }
+  /*
+    svg {
+      width: 100%;
+      height: 100%;
+    }*/
 
   .container {
     display: grid;
