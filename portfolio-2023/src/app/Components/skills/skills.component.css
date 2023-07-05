@@ -1,6 +1,103 @@
+
 * {
   box-sizing: border-box;
 }
+
+@media (min-width: 320px) {
+
+  .container-4 {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+    grid-template-areas:
+      "ppal-title ppal-title ppal-title ppal-title";
+    margin-top: 0px;
+    margin-bottom: 0px;
+    overflow: hidden;
+  }
+
+
+  .ppal-title {
+  display: grid;
+  grid-area: ppal-title;
+  font-size: 25pt;
+  font-family: "Unbounded";
+  grid-column: 2/4;
+  grid-row: 1/2;
+  text-align: left;
+ }
+
+
+ .icons{
+  display: inline-block;
+  grid-column: 1/5;
+  grid-row: 5/6;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  justify-content: center;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  }
+
+  img{
+  width: min-content;
+    padding: 20px;
+  object-fit:cover;
+  width: 100px;
+  height: 100px;
+  }
+
+
+  .tech-skills{
+    display: grid;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    justify-items: center;
+
+  }
+
+  .text{
+    display: grid ;
+    grid-column: 2/4;
+    font-family: "Lato";
+    padding:30px;
+    border-radius: 30px;
+    border: 1px solid;
+    margin: 20px;
+    grid-row: 2/3;
+  }
+
+  .text-2{
+    display: grid;
+    grid-column: 2/4;
+    font-family: "Lato";
+    padding:30px;
+    border-radius: 30px;
+    border: 1px solid ;
+    margin: 20px;
+    grid-row: 3/4;
+
+  }
+
+
+  .softskills{
+    display: grid;
+    grid-column: 2/4;
+    grid-row: 4/5;
+    justify-items: center;
+  }
+
+
+}
+
+
+
+
+
+
+@media (min-width: 768px) {
+
+
 
 .container-4 {
   display: grid;
@@ -88,3 +185,4 @@ ul, h3{
           filter: none;
       }
   }
+}
