@@ -95,7 +95,7 @@
 
 
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
 
 
 
@@ -137,6 +137,7 @@ img{
 .text{
   display: grid ;
   grid-column: 2/3;
+  grid-row: 2/3;
   font-family: "Lato";
   padding:30px;
   border-radius: 30px;
@@ -147,6 +148,7 @@ img{
 .text-2{
   display: grid;
   grid-column: 3/4;
+  grid-row: 2/3;
   font-family: "Lato";
   padding:30px;
   border-radius: 30px;
@@ -165,6 +167,7 @@ ul, h3{
 .softskills{
   display: grid;
   grid-column: 3/4;
+  grid-row: 2/3;
   justify-items: center;
 }
 
