@@ -16,11 +16,13 @@
   .ppal-title {
     display: grid;
     grid-area: ppal-title;
+    grid-column: 2/4;
     font-size: 21pt;
     font-family: "Unbounded";
     margin: 40px;
     grid-row: 1/2;
     text-align: left;
+    margin-left: -30px;
   }
 
   .card-container {
@@ -127,6 +129,7 @@
     grid-template-areas: "card-proj";
     grid-column-start: 2;
     grid-column-end: 4;
+    margin: 0;
 
   }
 

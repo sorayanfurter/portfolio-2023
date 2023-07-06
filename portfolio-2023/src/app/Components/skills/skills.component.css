@@ -21,8 +21,8 @@
   grid-area: ppal-title;
   font-size: 25pt;
   font-family: "Unbounded";
-  margin-left: 40px;
   margin-bottom: 0px;
+  grid-column: 2/4;
   grid-row: 1/2;
   text-align: left;
   margin-left: -30px;
@@ -113,12 +113,6 @@ img{
  height: 100px;
 }
 
-.tech-skills{
-  display: grid;
-  grid-column: 2/3;
-
-}
-
 .text{
   display: grid ;
   grid-column: 2/3;
@@ -127,7 +121,7 @@ img{
   padding:30px;
   border-radius: 30px;
   border: 1px solid;
-  margin: 20px;
+  margin: 0px 10px;
 }
 
 .text-2{
@@ -138,7 +132,7 @@ img{
   padding:30px;
   border-radius: 30px;
   border: 1px solid ;
-  margin: 20px;
+  margin: 0px 0px 0px 10px;
 
 }
 
