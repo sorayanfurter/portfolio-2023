@@ -16,7 +16,7 @@
   .ppal-title {
     display: grid;
     grid-area: ppal-title;
-    font-size: 25pt;
+    font-size: 24pt;
     font-family: "Unbounded";
     margin-left: 20px;
     grid-row: 1/2;
