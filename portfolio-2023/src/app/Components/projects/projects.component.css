@@ -11,7 +11,6 @@
       "card-container card-container card-container card-container";
     margin-top: 100px;
     margin-bottom: 250px;
-
   }
 
   .ppal-title {
@@ -19,14 +18,15 @@
     grid-area: ppal-title;
     font-size: 25pt;
     font-family: "Unbounded";
-    grid-column: 1/5;
+    margin-left: 20px;
     grid-row: 1/2;
-    text-align: center;
+    text-align: left;
   }
 
   .card-container {
     display: grid;
     row-gap: 50px;
+    margin: 20px 20px 0px 20px;
     margin-left: 20px;
     margin-right: 20px;
     text-align: center;
@@ -36,34 +36,131 @@
 
   .card-proj {
     display: grid;
-    grid-column: 2/4;
     border: 1px solid;
     text-align: center;
-
   }
 
   .card-number {
     display: flex;
     text-align: left;
     font-family: "Unbounded";
-    font-size: 70pt;
-    padding-left: 20px;
-    margin-bottom: 0;
+    font-size: 50pt;
+    margin-top: 30px;
   }
 
   .card-text h2,
-  h3,
   p {
     display: grid;
     max-height: 629.69px;
     padding-left: 40px;
     padding-right: 40px;
     justify-content: center;
-    vertical-align: middle;
+    grid-row: 2/3;
+  }
 
+  h2{
+    margin: 50px 0px 0px 0px;
+  }
+
+  .card-title {
+    font-size: 30px;
+    font-family: "Lato";
+  }
+
+  p {
+    font-size: 20px;
+    font-family: "Lato";
+    margin: 0;
+  }
+
+  .card-img,
+  img {
+    display: grid;
+    grid-row: 1/2;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  a {
+    display: inline-flex;
+    padding: 14px 18px;
+    width: 100px;
+    border: 2px solid;
+    border-radius: 30px;
+    margin: 10px 10px 20px 10px;
+    font-family: "Lato";
+    justify-content: center;
   }
 
 
+
+  .buttons {
+    display: inline-flex;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-3 {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+    grid-template-areas:
+      "ppal-title ppal-title ppal-title ppal-title"
+      "card-container card-container ";
+    margin-top: 250px;
+    margin-bottom: 250px;
+    overflow: hidden;
+  }
+
+  .ppal-title {
+    display: grid;
+    grid-area: ppal-title;
+    font-size: 35pt;
+    font-family: "Unbounded";
+    grid-column: 2/4;
+    grid-row: 1/2;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-areas: "card-proj";
+    grid-column-start: 2;
+    grid-column-end: 4;
+    gap: 50px;
+  }
+
+  .card-proj {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr auto;
+    grid-column: 2/4;
+    border: 1px solid;
+  }
+
+  .card-number {
+    display: grid;
+    text-align: left;
+    font-family: "Unbounded";
+    font-size: 70pt;
+    padding-left: 20px;
+    margin-bottom: 0;
+    grid-column: 2/4;
+  }
+
+  .card-text h2,
+  h3,
+  p {
+    display: grid;
+    flex-direction: column;
+    max-height: 629.69px;
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
+    justify-content: center;
+    grid-column: 2/4;
+  }
 
   .card-title {
     font-size: 30px;
@@ -77,17 +174,13 @@
 
   .card-img img {
     display: grid;
-    grid-column: 2/4;
-    grid-row: 3/4;
-    height: 400px;
+    height: 629.69px;
     object-fit: cover;
-
+    vertical-align: middle;
   }
 
-
-
- .buttons{
-  text-align: center;
+  .card-proj {
+    display: grid;
   }
 
   a {
@@ -99,6 +192,7 @@
     margin-top: 15px;
     margin-right: 15px;
     margin-bottom: 15px;
+    grid-row: 2/3;
     font-family: "Lato";
     justify-content: center;
   }
@@ -116,116 +210,4 @@
     text-align: center;
     justify-content: center;
   }
-}
-
-
-
-@media (min-width: 1200px) {
-.container-3 {
-  display: grid;
-  grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
-  grid-template-areas:
-    "ppal-title ppal-title ppal-title ppal-title"
-    "card-container card-container ";
-  margin-top: 250px;
-  margin-bottom: 250px;
-  overflow: hidden;
-}
-
-.ppal-title {
-  display: grid;
-  grid-area: ppal-title;
-  font-size: 35pt;
-  font-family: "Unbounded";
-  grid-column: 2/4;
-  grid-row: 1/2;
-}
-
-.card-container {
-  display: grid;
-  grid-template-areas: "card-proj";
-  grid-column-start: 2;
-  grid-column-end: 4;
-  gap: 50px;
-}
-
-.card-proj {
-  display: grid;
-  grid-template-columns: 0.5fr 1fr;
-  grid-template-rows: 1fr auto;
-  grid-column: 2/4;
-  border: 1px solid;
-}
-
-.card-number {
-  display: grid;
-  text-align: left;
-  font-family: "Unbounded";
-  font-size: 70pt;
-  padding-left: 20px;
-  margin-bottom: 0;
-  grid-column: 2/4;
-}
-
-.card-text h2,
-h3,
-p {
-  display: grid;
-  flex-direction: column;
-  max-height: 629.69px;
-  box-sizing: border-box;
-  padding-left: 40px;
-  padding-right: 40px;
-  justify-content: center;
-  grid-column: 2/4;
-}
-
-.card-title {
-  font-size: 30px;
-  font-family: "Lato";
-}
-
-p {
-  font-size: 20px;
-  font-family: "Lato";
-}
-
-.card-img img {
-  display: grid;
-  height: 629.69px;
-  object-fit: cover;
-  vertical-align: middle;
-}
-
-.card-proj {
-  display: grid;
-}
-
-a {
-  display: inline-flex;
-  padding: 14px 18px;
-  width: 150px;
-  border: 2px solid;
-  border-radius: 30px;
-  margin-top: 15px;
-  margin-right: 15px;
-  margin-bottom: 15px;
-  grid-row: 2/3;
-  font-family: "Lato";
-  justify-content: center;
-}
-
-.card-text {
-  font-family: "Lato";
-  text-decoration: none;
-}
-
-.buttons {
-  display: grid;
-  grid-column: 1/3;
-  grid-row: 2/3;
-  padding: 20px;
-  text-align: center;
-  justify-content: center;
-}
 }
