@@ -21,7 +21,7 @@
   grid-area: ppal-title;
   font-size: 25pt;
   font-family: "Unbounded";
-  margin-left: 20px;
+  margin-left: 40px;
   margin-bottom: 0px;
   grid-row: 1/2;
   text-align: left;
@@ -55,7 +55,7 @@
     padding:30px;
     border-radius: 30px;
     border: 1px solid;
-    margin: 0px 20px 20px 20px;
+    margin: 0px 40px 20px 40px;
     grid-column: 1/5;
     grid-row: 2/3;
   }
@@ -67,7 +67,7 @@
     padding:30px;
     border-radius: 30px;
     border: 1px solid ;
-    margin: 20px;
+    margin: 20px 40px 20px 40px;
     grid-row: 3/4;
 
   }

@@ -16,9 +16,9 @@
   .ppal-title {
     display: grid;
     grid-area: ppal-title;
-    font-size: 24pt;
+    font-size: 23pt;
     font-family: "Unbounded";
-    margin-left: 20px;
+    margin: 40px;
     grid-row: 1/2;
     text-align: left;
   }
@@ -26,9 +26,7 @@
   .card-container {
     display: grid;
     row-gap: 50px;
-    margin: 20px 20px 0px 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 10px 40px 40px 40px;
     text-align: center;
     justify-content: center;
     grid-area: card-container;

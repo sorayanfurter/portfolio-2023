@@ -15,7 +15,7 @@
     grid-column: 1/5;
     grid-row: 1/2;
     text-align: left;
-    margin-left: 20px;
+    margin: 40px;
   }
 
   .avatar {
@@ -41,7 +41,7 @@
     font-family: "Lato";
     text-align: center;
     font-size: 14pt;
-    margin: 20px;
+    margin: 10px 40px 10px 40px;
   }
 }
 
