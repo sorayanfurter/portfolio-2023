@@ -6,7 +6,9 @@
   .container-5 {
     display: grid;
     grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
-    grid-template-areas: "ppal-title ppal-title ppal-title ppal-title";
+    grid-template-areas: "ppal-title ppal-title ppal-title ppal-title"
+
+                          ;
     margin-top: 100px;
     margin-bottom: 250px;
     overflow: hidden;
@@ -24,10 +26,15 @@
 
   form{
     display: grid;
+    font-family: "Lato";
     grid-column: 2/4;
+    grid-row: 2/3;
+    padding: 30px 30px 30px 30px;
+    border: 1px solid black;
+    margin: 0px;
+
+
   }
-
-
 
   button {
     overflow: visible;
@@ -51,50 +58,9 @@
     overflow: auto;
   }
 
-  #container {
-    border: solid 3px #474544;
-    max-width: 768px;
-    margin: 60px auto;
-    position: relative;
-  }
-
-  form {
-    padding: 37.5px;
-    margin: 50px 0;
-    border: 1px solid black;
-  }
-
-  h1 {
-    color: #474544;
-    font-size: 32px;
-    font-weight: 700;
-    letter-spacing: 7px;
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  .underline {
-    border-bottom: solid 2px #474544;
-    margin: -0.512em auto;
-    width: 80px;
-  }
-
-  .icon_wrapper {
-    margin: 50px auto 0;
-    width: 100%;
-  }
-
-  .icon {
-    display: block;
-    fill: #474544;
-    height: 50px;
-    margin: 0 auto;
-    width: 50px;
-  }
-
   .email {
     float: right;
-    width: 45%;
+    width: 100%;
   }
 
   input[type='text'], [type='email'], select, textarea {
@@ -132,7 +98,7 @@
 
   .name {
     float: left;
-    width: 45%;
+    width: 100%;
   }
 
   select {
@@ -144,6 +110,9 @@
 
   select::-ms-expand {
     display: none;
+  }
+  .name{
+    width: 100%;
   }
 
   .subject {
@@ -203,68 +172,6 @@
     color: #F2F3EB;
   }
 
-  @media screen and (max-width: 768px) {
-    #container {
-      margin: 20px auto;
-      width: 95%;
-    }
-  }
-
-  @media screen and (max-width: 480px) {
-    h1 {
-      font-size: 26px;
-    }
-
-    .underline {
-      width: 68px;
-    }
-
-    #form_button {
-      padding: 15px 25px;
-    }
-  }
-
-  @media screen and (max-width: 420px) {
-    h1 {
-      font-size: 12px;
-    }
-
-    .icon {
-      height: 35px;
-      width: 35px;
-    }
-
-    .underline {
-      width: 53px;
-    }
-
-    input[type='text'], [type='email'], select, textarea {
-      font-size: 0.600em;
-    }
-
-    form{
-      width:fit-content;
-    }
-  }
-
 }
 
-@media (min-width: 768px) {
-  .container-5 {
-    display: grid;
-    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
-    grid-template-areas: "ppal-title ppal-title ppal-title ppal-title";
-    margin-top: 100px;
-    margin-bottom: 250px;
-    overflow: hidden;
-  }
 
-  .ppal-title {
-    display: grid;
-    grid-area: ppal-title;
-    font-size: 35pt;
-    font-family: "Unbounded";
-    grid-column: 2/4;
-    margin-left: -30px;
-  }
-}
