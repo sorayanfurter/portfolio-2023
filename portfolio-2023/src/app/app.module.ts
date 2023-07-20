@@ -9,6 +9,13 @@ import { ProjectsComponent } from './Components/projects/projects.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { SkillsComponent } from './Components/skills/skills.component';
 import { ContactComponent } from './Components/contact/contact.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { ContactService } from './contact.service';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,13 +25,21 @@ import { ContactComponent } from './Components/contact/contact.component';
     ProjectsComponent,
     FooterComponent,
     SkillsComponent,
-    ContactComponent
+    ContactComponent,
+
  ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+
+
   ],
-  providers: [],
+  providers: [
+    ContactService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -105,7 +105,7 @@
 @media (min-width: 1200px) {
   .container-3 {
     display: grid;
-    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
     grid-template-areas:
       "ppal-title ppal-title ppal-title ppal-title"
       "card-container card-container card-container card-container";
@@ -128,16 +128,24 @@
     display: grid;
     grid-template-areas: "card-proj";
     grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-end: 5;
     margin: 0;
-
+    row-gap: 30px;
+    justify-content:space-around;
   }
 
   .card-proj {
     display: grid;
-    grid-column: 2/4;
+    grid-column: 2/3;
     border: 1px solid;
+    margin: 10px;
+  }
 
+  .card-proj2{
+    display: grid;
+    grid-column: 3/4;
+    border: 1px solid;
+    margin: 10px;
   }
 
   .card-number {
@@ -147,7 +155,7 @@
     font-size: 70pt;
     padding-left: 20px;
     margin-bottom: 0;
-    grid-column: 2/3;
+
   }
 
 
@@ -156,8 +164,7 @@
   p {
     display: grid;
     flex-direction: column;
-    max-height: 629.69px;
-    box-sizing: border-box;
+    max-height: 400px;
     padding-left: 40px;
     padding-right: 40px;
     justify-content: center;
@@ -171,13 +178,13 @@
   }
 
   p {
-    font-size: 20px;
+    font-size: 16px;
     font-family: "Lato";
   }
 
   .card-img, img {
     display: grid;
-    height: 629.69px;
+    max-height: 629.69px;
     object-fit: cover;
 
 
