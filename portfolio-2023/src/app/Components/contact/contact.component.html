@@ -2,38 +2,36 @@
   <div class="ppal-title">
     <h2 id="anchor-contact">CONTACT</h2>
   </div>
-
+  <duet-alert *ngIf="message" variation="success" dismissible> Thank you for your message! It will me answered as soon as possible </duet-alert>
   <form [formGroup]="FormData" method="post" (ngSubmit)="onSubmit(FormData.value)">
+
     <div class="form-group">
-      <label for="Email">Email</label>
+      <label for="fullname">FULL NAME </label>
+      <input
+        type="text"
+        class="form-control"
+        name="Fullname"
+        placeholder=""
+        formControlName="Fullname"
+      />
+    </div>
+    <div class="form-group">
+      <label for="Email">EMAIL</label>
       <input
         type="email"
         class="form-control"
         name="Email"
         aria-describedby="emailHelp"
-        placeholder="Enter email"
+        placeholder=""
         formControlName="Email"
       />
-      <small id="emailHelp" class="form-text text-muted"
-        >We'll never share your email with anyone else.</small
-      >
     </div>
     <div class="form-group">
-      <label for="fullname">Full Name</label>
-      <input
-        type="text"
-        class="form-control"
-        name="Fullname"
-        placeholder="Full Name"
-        formControlName="Fullname"
-      />
-    </div>
-
-    <div class="form-group">
-      <label for="comment">Comment</label>
+      <label for="comment">MESSAGE</label>
       <textarea
         class="form-control"
         formControlName="Comment"
+        placeholder=""
         name="Comment"
       >
       </textarea>
@@ -41,9 +39,10 @@
     <button
       type="submit"
       class="btn btn-primary"
+      id="form-button"
       [disabled]="!FormData.valid"
     >
-      Submit
+      SUBMIT
     </button>
   </form>
 </div>

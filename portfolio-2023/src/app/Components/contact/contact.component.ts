@@ -15,7 +15,7 @@ import { ContactService } from 'src/app/contact.service';
 })
 export class ContactComponent implements OnInit {
   FormData: FormGroup;
-
+  message: boolean = false;
   constructor(private builder: FormBuilder, private contact: ContactService) {}
   ngOnInit() {
     this.FormData = this.builder.group({
@@ -35,6 +35,7 @@ export class ContactComponent implements OnInit {
       next: (resp) => {
         console.log(resp);
         location.href = 'http://localhost:4200/#anchor-contact';
+        this.message = true;
         this.FormData.reset();
       },
       error: (err) => {

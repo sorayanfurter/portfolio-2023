@@ -5,7 +5,7 @@
 @media (min-width: 320px) {
   .container-5 {
     display: grid;
-    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
     grid-template-areas: "ppal-title ppal-title ppal-title ppal-title";
     margin-top: 100px;
     margin-bottom: 250px;
@@ -17,7 +17,7 @@
     grid-area: ppal-title;
     font-size: 25pt;
     font-family: "Unbounded";
-    grid-column: 2/4;
+    grid-column: 2/5;
     grid-row: 1/2;
     margin-left: -30px;
   }
@@ -25,33 +25,26 @@
   form {
     display: grid;
     font-family: "Lato";
-    grid-column: 2/4;
-    grid-row: 2/3;
-    padding: 30px 30px 30px 3 0px;
-    border: 1px solid black;
-    margin: 0px;
+    grid-column: 2/5;
+    grid-row: 3/4;
+    padding: 40px 40px 40px 40px;
+    border: 2px solid black;
+    border-radius: 5px;
+
   }
 
-  button {
+  label{
+    margin-bottom: 30px;
+  }
+
+  #form-button {
     overflow: visible;
-  }
+    background:none;
+    border: 2px solid black;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
 
-  button,
-  select {
-    text-transform: none;
-  }
-
-  button,
-  input,
-  select,
-  textarea {
-    color: #5a5a5a;
-    font: inherit;
-    margin: 0;
-  }
-
-  input {
-    line-height: normal;
   }
 
   textarea {
@@ -65,40 +58,17 @@
 
   input[type="text"],
   [type="email"],
-  select,
   textarea {
     background: none;
-    border: none;
-    border-bottom: solid 2px #474544;
+    border: solid 1px #474544;
     color: #474544;
     font-size: 1em;
     font-weight: 400;
-    letter-spacing: 1px;
-    margin: 0em 0 1.875em 0;
-    padding: 0 0 0.875em 0;
-    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
     width: 100%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-  }
 
-  input[type="text"]:focus,
-  [type="email"]:focus,
-  textarea:focus {
-    outline: none;
-    padding: 0 0 0.875em 0;
-  }
-
-  .message {
-    float: none;
   }
 
   .name {
@@ -106,70 +76,20 @@
     width: 100%;
   }
 
-  .name {
-    width: 100%;
-  }
-
   .subject {
     width: 100%;
   }
 
-  .telephone {
-    width: 100%;
-  }
-
   textarea {
-    line-height: 150%;
     height: 150px;
     resize: none;
     width: 100%;
   }
 
-  ::-webkit-input-placeholder {
-    color: #474544;
-  }
 
-  :-moz-placeholder {
-    color: #474544;
-    opacity: 1;
-  }
-
-  ::-moz-placeholder {
-    color: #474544;
-    opacity: 1;
-  }
-
-  :-ms-input-placeholder {
-    color: #474544;
-  }
-
-  #form_button {
-    background: none;
-    border: solid 2px #474544;
-    color: #474544;
-    cursor: pointer;
-    display: inline-block;
-    font-family: "Helvetica", Arial, sans-serif;
-    font-size: 0.875em;
-    font-weight: bold;
-    outline: none;
-    padding: 20px 35px;
-    text-transform: uppercase;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-
-  #form_button:hover {
-    background: #474544;
-    color: #f2f3eb;
-  }
-
- #form-status{
-  padding: 10px;
-  background-color: aquamarine;
+  duet-alert{
+  display: grid;
+  grid-column: 2/5;
+  grid-row: 2/3;
  }
-
 }
