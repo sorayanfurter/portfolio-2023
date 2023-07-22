@@ -25,7 +25,7 @@
   grid-column: 2/4;
   grid-row: 1/2;
   text-align: left;
-  margin-left: -30px;
+  margin-left: 0px;
  }
 
 
@@ -54,22 +54,29 @@
     display: grid ;
     font-family: "Lato";
     padding:30px;
-    border-radius: 30px;
+    border-radius: 5px;
     border: 1px solid;
     margin: 0px 40px 20px 40px;
     grid-column: 1/5;
     grid-row: 2/3;
+    border: 2px solid black;
+    box-shadow: 5px 5px 0px 1px rgba(0, 0, 0, 1);
+    background-color: whitesmoke;
+    padding: 20px;
   }
 
   .text-2{
     display: grid;
     grid-column: 1/5;
     font-family: "Lato";
-    padding:30px;
-    border-radius: 30px;
+    padding:20px;
+    border-radius: 5px;
     border: 1px solid ;
     margin: 20px 40px 20px 40px;
     grid-row: 3/4;
+    border: 2px solid black;
+    box-shadow: 5px 5px 0px 1px rgba(0, 0, 0, 1);
+    background-color: whitesmoke;
 
   }
 
@@ -118,9 +125,9 @@ img{
   grid-column: 2/3;
   grid-row: 2/3;
   font-family: "Lato";
-  padding:30px;
-  border-radius: 30px;
-  border: 1px solid;
+  text-align: center;
+  padding:20px;
+  border: 2px solid;
   margin: 0px 10px;
 }
 
@@ -129,9 +136,9 @@ img{
   grid-column: 3/4;
   grid-row: 2/3;
   font-family: "Lato";
-  padding:30px;
-  border-radius: 30px;
-  border: 1px solid ;
+  text-align: center;
+  padding:20px;
+  border: 2px solid ;
   margin: 0px 0px 0px 10px;
 
 }
