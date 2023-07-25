@@ -83,10 +83,10 @@
   .button-style {
     display: grid;
     background-color: rgba(255, 255, 255, 0);
-    border: 2px solid #422800;
+    border: 2px solid #000000;
     border-radius: 30px;
-    box-shadow: #422800 4px 4px 0 0;
-    color: #422800;
+    box-shadow: #000000 4px 4px 0 0;
+    color: #000000;
     cursor: pointer;
     font-family: "Lato";
     font-weight: 400;
@@ -105,7 +105,7 @@
   }
 
   .button-style:active {
-    box-shadow: #422800 2px 2px 0 0;
+    box-shadow: #000000 2px 2px 0 0;
     transform: translate(2px, 2px);
   }
   .sm-icons {

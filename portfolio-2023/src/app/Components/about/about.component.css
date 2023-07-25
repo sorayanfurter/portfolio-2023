@@ -108,7 +108,7 @@
 
   }
 
-  #stars, .stars{
+ /* #stars, .stars{
     display:grid ;
     border-radius: 0;
     border: 0px;
@@ -122,6 +122,6 @@
     z-index: 2;
     grid-row: 1/3;
     width: 60%;
-  }
+  }*/
 
 }
