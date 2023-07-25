@@ -121,7 +121,7 @@
 
   a {
     text-align: center;
-    color: rgb(42, 42, 42);
+    color: rgb(0, 0, 0);
   }
 
   ul {
@@ -299,11 +299,6 @@
     grid-column: 1/5;
     height: 100%;
   }
-  /*
-    svg {
-      width: 100%;
-      height: 100%;
-    }*/
 
   .container {
     display: grid;
