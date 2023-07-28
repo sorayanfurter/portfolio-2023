@@ -12,9 +12,11 @@ header {
   display: grid;
   grid-column: 1/-1;
   overflow: hidden;
+
 }
 
 .nav {
+
   --state-close: scale(0);
   --state-hamburguer: scale(1);
   --state-menu: translate(-100%);
@@ -23,7 +25,7 @@ header {
   justify-content: space-between;
   align-items: center;
   grid-template-columns: repeat(2, max-content);
-  background-color: transparent;
+
   grid-column: 1/-1;
 }
 

@@ -9,20 +9,19 @@
     grid-template-areas:
       "ppal-title ppal-title ppal-title ppal-title"
       "card-container card-container card-container card-container";
-    margin-top: 100px;
-    margin-bottom: 250px;
+    margin-top: 50px;
+    margin-bottom: 100px;
   }
 
   .ppal-title {
     display: grid;
     grid-area: ppal-title;
-    grid-column: 2/4;
+    grid-column: 1/5;
     font-size: 21pt;
     font-family: "Unbounded";
-    margin: 40px;
     grid-row: 1/2;
     text-align: left;
-    margin-left: -30px;
+    margin: 0px 0px 0px 40px;
   }
 
   .card-container {
@@ -36,8 +35,16 @@
 
   .card-proj {
     display: grid;
-    border: 1px solid;
+    border: 2px solid;
     text-align: center;
+    background-color: whitesmoke;
+  }
+
+  .card-proj2 {
+    display: grid;
+    border: 2px solid;
+    text-align: center;
+    background-color: whitesmoke;
   }
 
   .card-number {
@@ -51,6 +58,7 @@
   .card-text h2,
   p {
     display: grid;
+    font-size: 14pt;
     max-height: 629.69px;
     padding-left: 40px;
     padding-right: 40px;
@@ -58,7 +66,7 @@
     grid-row: 2/3;
   }
 
-  h2{
+  h2 {
     margin: 50px 0px 0px 0px;
   }
 
@@ -91,8 +99,6 @@
     font-family: "Lato";
     justify-content: center;
   }
-
-
 
   .buttons {
     display: inline-flex;
@@ -131,7 +137,7 @@
     grid-column-end: 4;
     margin: 0;
     row-gap: 30px;
-    justify-content:space-around;
+    justify-content: space-around;
   }
 
   .card-proj {
@@ -142,13 +148,13 @@
     background-color: whitesmoke;
   }
 
-  .card-proj2{
+  .card-proj2 {
     display: grid;
     grid-column: 3/4;
     border: 2px solid;
     margin: 10px;
+    background-color: whitesmoke;
   }
-
 
   h3,
   p {
@@ -157,7 +163,6 @@
     padding-left: 40px;
     padding-right: 40px;
     justify-content: space-between;
-
   }
 
   .card-title {
@@ -166,7 +171,6 @@
     font-size: 30px;
     font-family: "Lato";
     background-color: whitesmoke;
-
   }
 
   p {
@@ -174,13 +178,12 @@
     font-family: "Lato";
   }
 
-  .card-img, img {
+  .card-img,
+  img {
     display: grid;
     max-height: 500px;
-    object-fit:cover;
+    object-fit: cover;
     grid-row: 1/2;
-
-
   }
 
   a {
@@ -198,7 +201,8 @@
     text-decoration: none;
   }
 
-  .card-text, .card-title {
+  .card-text,
+  .card-title {
     display: flex;
     flex-direction: column;
     font-family: "Lato";
@@ -213,10 +217,10 @@
     padding: 20px;
     text-align: center;
     justify-content: center;
-
   }
 
-  .btn-demo, .btn-github{
+  .btn-demo,
+  .btn-github {
     border: 2px solid black;
     border-radius: 30px;
     box-shadow: black 4px 4px 0 0;
