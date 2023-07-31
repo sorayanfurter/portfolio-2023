@@ -214,8 +214,9 @@
   img {
     display: grid;
     max-height: 500px;
-    object-fit: cover;
+    object-fit:cover;
     grid-row: 1/2;
+    justify-content: center;
   }
 
   a {
@@ -234,12 +235,12 @@
   }
 
   .card-text,
-  .card-title {
+  .card-title, p, h3, .buttons {
     display: flex;
     flex-direction: column;
     font-family: "Lato";
     background-color: whitesmoke;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
   .buttons {
