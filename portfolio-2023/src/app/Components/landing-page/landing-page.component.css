@@ -57,6 +57,7 @@
     margin-bottom: 40px;
     margin-top: 40px;
   }
+
   .title {
     display: grid;
     grid-column: 2/5;
@@ -241,7 +242,8 @@
     grid-column: 3/4;
     grid-row: 1/2;
     justify-self: center;
-    width: 30%;
+    align-self: end;
+    width: 20%;
   }
 
   .hello{
