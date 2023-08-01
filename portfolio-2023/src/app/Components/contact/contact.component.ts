@@ -34,7 +34,7 @@ export class ContactComponent implements OnInit {
     this.contact.PostMessage(FormData).subscribe({
       next: (resp) => {
         console.log(resp);
-        location.href = 'http://localhost:4200/#anchor-contact';
+        location.href = 'https://soraya-ferulano-paez.netlify.app/#contact';
         this.message = true;
         this.FormData.reset();
       },

@@ -23,14 +23,14 @@
     grid-column: 1/5;
     grid-row: 2/3;
     justify-items: center;
-    margin-top: 0px;
+    margin: 0px 40px 0px 40px;
     max-height: fit-content;
   }
 
   img {
     grid-row: 2/3;
-    border-radius: 500px;
-    width: 80%;
+    border-radius: 5px;
+    width: 100%;
     border: 2px solid black;
     box-shadow: 5px 5px 0px 1px rgba(0, 0, 0, 1);
     margin-top: 0px;
@@ -59,6 +59,71 @@
     border-radius: 5px;
     padding: 25px 25px 25px 25px;
   }
+
+  .sm-icons {
+    display: grid;
+    grid-column: 1/5;
+    grid-row: 4/5;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    margin-left: 4px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  a {
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+
+  ul {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0px;
+    list-style-type: none;
+    font-size: 2rem;
+    padding: 0px;
+  }
+
+  li {
+    padding: 0.5rem;
+  }
+
+  .fab {
+    font-size: 2rem;
+  }
+
+  /* transition for social icon hover animation */
+
+  .fa-linkedin,
+  .fa-github,
+  .fa-square-behance {
+    transition: 0.4s;
+    cursor: pointer;
+  }
+
+  /* social media icons hover color */
+
+  .fa-linkedin:hover,
+  .fa-linkedin:focus {
+    color: #1da1f2;
+    transform: scale(1.1);
+  }
+
+  .fa-square-behance:hover,
+  .fa-square-behance:focus {
+    color: #1766f7;
+    transform: scale(1.1);
+  }
+
+  .fa-github:hover,
+  .fa-github:focus {
+    color: #000;
+    transform: scale(1.1);
+  }
 }
 
 @media (min-width: 768px) {
@@ -75,38 +140,47 @@
     grid-row: 1/2;
     margin-bottom: 0px;
     margin-left: 0px;
-    z-index: 2;
+
   }
   .avatar {
     display: grid;
-    grid-column: 4/5;
+    grid-column: 2/3;
     grid-row: 2/3;
     margin-top: 0px;
-    justify-items: right;
+    justify-items: center;
     align-self: center;
-    max-width: fit-content;
     max-height: max-content;
     vertical-align: middle;
   }
 
   img {
-    border-radius: 500px;
-    width: 115%;
+
+    width: 120%;
     vertical-align: middle;
   }
 
   .text {
     display: grid;
-    grid-column: 2/4;
+    grid-column: 3/5;
     grid-row: 2/3;
-    margin: 0px 30px 0px 0px;
-    padding: 0px 20px 0px 0px;
-    justify-self: left;
-    vertical-align: middle;
+    margin: 0px 0px 0px 30px;
+    padding: 0px 0px 0px 20px;
+    justify-self: right;
+
+
   }
   p {
     padding: 30px 50px 30px 50px;
+    font-size: 20px;
   }
+
+  .sm-icons{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
 }
 
 @media (min-width: 1200px) {
@@ -127,22 +201,37 @@
   }
 
   .avatar {
-    grid-column: 4/5;
-    align-self: end;
+    grid-column: 2/3;
+    align-self: left;
+    margin-top: 0;
     justify-items: center;
   }
 
   img {
-    width: 80%;
+    width: 115%;
+
   }
 
   .text {
-    grid-column: 2/4;
-    margin-right: 30px;
-    justify-content: center;
+    grid-column: 3/5;
+    grid-row: 2/3;
+    margin: 0px 0px 0px 30px;
+    align-self: start;
+    justify-content: left;
   }
 
   p {
     padding: 50px 50px 50px 50px;
+  }
+
+  .sm-icons{
+    grid-column: 3/5;
+    grid-row: 2/3;
+    vertical-align: bottom;
+    margin: 0px 0px -20px 30px;
+  }
+
+  .fab {
+    font-size: 2.5rem;
   }
 }
