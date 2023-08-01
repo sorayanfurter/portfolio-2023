@@ -6,10 +6,8 @@
   .container-3 {
     display: grid;
     grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
-    grid-template-areas:
-      "ppal-title ppal-title ppal-title ppal-title"
-      "card-container card-container card-container card-container";
-    margin-top: 50px;
+
+    margin-top: 100px;
     margin-bottom: 100px;
   }
 
@@ -26,25 +24,29 @@
 
   .card-container {
     display: grid;
-    row-gap: 50px;
-    margin: 0px 40px 40px 40px;
-    text-align: center;
-    justify-content: center;
-    grid-area: card-container;
+    grid-column: 1/5;
+    margin: 0px 40px 0px 40px;
+    row-gap: 15px;
+    justify-content: space-evenly
   }
 
   .card-proj {
     display: grid;
+    grid-column: 1/5;
+
     border: 2px solid;
     text-align: center;
     background-color: whitesmoke;
+
   }
 
   .card-proj2 {
     display: grid;
+    grid-column: 1/5;
     border: 2px solid;
     text-align: center;
     background-color: whitesmoke;
+
   }
 
   .card-number {
@@ -81,6 +83,7 @@
   .card-img,
   img {
     display: grid;
+    grid-column: 1/5;
     grid-row: 1/2;
     height: 400px;
     object-fit: cover;
@@ -88,13 +91,13 @@
 
   a {
     display: inline-flex;
-    padding: 14px 18px;
-    width: 150px;
+    padding: 16px 20px;
+    width: 100px;
     border: 2px solid;
     border-radius: 30px;
     margin: 10px 10px 20px 10px;
     font-family: "Lato";
-    font-size: 18px;
+    font-size: 16px;
     justify-content: center;
   }
 
@@ -235,12 +238,12 @@
   }
 
   .card-text,
-  .card-title, p, h3, .buttons {
+  .card-title {
     display: flex;
     flex-direction: column;
     font-family: "Lato";
     background-color: whitesmoke;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
 
   .buttons {
