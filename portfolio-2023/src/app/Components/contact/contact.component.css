@@ -34,21 +34,19 @@
     border-radius: 5px;
     background-color: whitesmoke;
     margin: 0px 40px 40px 40px;
-
   }
 
-  label{
+  label {
     margin-bottom: 30px;
   }
 
   #form-button {
     overflow: visible;
-    background:none;
+    background: none;
     border: 1px solid black;
     margin-top: 10px;
     padding: 10px;
     border-radius: 50px;
-
   }
 
   textarea {
@@ -72,7 +70,6 @@
     padding: 10px;
     border-radius: 5px;
     width: 100%;
-
   }
 
   .name {
@@ -90,31 +87,29 @@
     width: 100%;
   }
 
+  duet-alert {
+    display: grid;
+    grid-column: 2/5;
+    grid-row: 2/3;
+  }
 
-  duet-alert{
-  display: grid;
-  grid-column: 2/5;
-  grid-row: 2/3;
- }
-
- button{
-  border: 2px solid black;
+  button {
+    border: 2px solid black;
     border-radius: 30px;
     box-shadow: black 4px 4px 0 0;
-
- }
+  }
 }
 
-@media (min-width: 768px){
-  .container-5{
+@media (min-width: 768px) {
+  .container-5 {
     grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
   }
-  form{
+  form {
     grid-column: 2/5;
-    margin: 0px 0px 40px 0px;
+    margin: 0px 0px 150px 0px;
   }
 
-  .ppal-title{
+  .ppal-title {
     grid-column: 2/5;
     font-size: 35pt;
     margin-left: 0;

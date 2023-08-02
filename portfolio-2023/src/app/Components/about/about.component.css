@@ -131,6 +131,8 @@
     display: grid;
     grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
     grid-template-rows: 0.5fr 1fr;
+    margin-top: 150px;
+    margin-bottom: 150px;
   }
 
   .title {
@@ -140,7 +142,6 @@
     grid-row: 1/2;
     margin-bottom: 0px;
     margin-left: 0px;
-
   }
   .avatar {
     display: grid;
@@ -154,7 +155,6 @@
   }
 
   img {
-
     width: 120%;
     vertical-align: middle;
   }
@@ -166,21 +166,18 @@
     margin: 0px 0px 0px 30px;
     padding: 0px 0px 0px 20px;
     justify-self: right;
-
-
   }
   p {
     padding: 30px 50px 30px 50px;
     font-size: 20px;
   }
 
-  .sm-icons{
+  .sm-icons {
     grid-column: 2/3;
     grid-row: 2/3;
     align-items: flex-end;
     justify-content: center;
   }
-
 }
 
 @media (min-width: 1200px) {
@@ -209,7 +206,6 @@
 
   img {
     width: 115%;
-
   }
 
   .text {
@@ -224,7 +220,7 @@
     padding: 50px 50px 50px 50px;
   }
 
-  .sm-icons{
+  .sm-icons {
     grid-column: 3/5;
     grid-row: 2/3;
     vertical-align: bottom;

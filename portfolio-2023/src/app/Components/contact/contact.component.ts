@@ -35,8 +35,9 @@ export class ContactComponent implements OnInit {
       next: (resp) => {
         console.log(resp);
         location.href = 'https://soraya-ferulano-paez.netlify.app/#contact';
-        this.message = true;
         this.FormData.reset();
+        this.message = true;
+
       },
       error: (err) => {
         console.warn(err.responseText);

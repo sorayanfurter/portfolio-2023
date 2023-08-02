@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;700;900&display=swap");
 
 @media (min-width: 320px) {
   .main {
@@ -39,8 +39,8 @@
     grid-column: 2/5;
     grid-row: 2/3;
     font-family: "Unbounded";
-    font-size: 12px;
-    font-weight: 200;
+    font-size: 16px;
+    font-weight: 100;
     text-align: left;
     margin-bottom: 0px;
   }
@@ -112,10 +112,6 @@
     box-shadow: #000000 2px 2px 0 0;
     transform: translate(2px, 2px);
   }
-
-
-
-
 }
 
 @media (min-width: 768px) {
@@ -125,7 +121,7 @@
 
   .hello,
   .title {
-    font-size: 16pt;
+    font-size: 16px;
   }
 
   .welcometxt {
@@ -142,7 +138,6 @@
     padding: 0px;
     z-index: 2;
   }
-
 
   .sm-icons {
     grid-column: 2/5;
@@ -164,22 +159,20 @@
     font-size: 2.5rem;
   }
 
-  .button-style{
+  .button-style {
     padding: 10px 30px 10px 30px;
     font-size: 20px;
   }
 }
 @media (min-width: 1200px) {
-  .welcometxt{
+  .welcometxt {
     grid-column: 1/6;
     grid-row: 1/4;
-
     justify-content: center;
     vertical-align: middle;
-
   }
 
-  .stars{
+  .stars {
     display: grid;
     grid-column: 3/4;
     grid-row: 1/2;
@@ -188,42 +181,152 @@
     width: 20%;
   }
 
-  .hello{
+  .hello {
     margin-top: -20px;
+
   }
 
-  .hello, .title{
+  .hello,
+  .title {
     grid-column: 1/6;
     grid-row: 1/4;
-    font-size: 14pt;
+    font-size: 16px;
+
 
   }
 
-  .fullname{
+  .hello-fontweight , .title-fontweight{
+    font-family: 'Unbounded', cursive;
+    font-weight: 300;
+  }
+  .fullname {
     margin: 0px;
     justify-content: center;
   }
 
-  .hello{
+    /**
+ Hello animation
+ */
+
+  .slide-in-left {
+    -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+  @-webkit-keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+      transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+      transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .slide-in-bottom {
+    -webkit-animation: slide-in-bottom 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: slide-in-bottom 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+  /**
+ Fullname animation
+ */
+  @-webkit-keyframes slide-in-bottom {
+    0% {
+      -webkit-transform: translateY(1000px);
+      transform: translateY(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-bottom {
+    0% {
+      -webkit-transform: translateY(1000px);
+      transform: translateY(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+
+  /**
+ Title animation
+ */
+  .slide-in-right {
+    -webkit-animation: slide-in-right 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: slide-in-right 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+  @-webkit-keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+      transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+      transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .hello {
     margin-bottom: 60px;
   }
-  .title{
+  .title {
     text-align: right;
     justify-items: end;
     justify-self: end;
   }
 
-  .button{
+  .button {
     grid-row: 1/4;
     align-self: self-end;
-
   }
 
-  .sm-icons{
+  .sm-icons {
     grid-row: 4/5;
     align-self: center;
   }
- /* main {
+  /* main {
     display: grid;
     grid-column: 1/5;
     height: 100%;
