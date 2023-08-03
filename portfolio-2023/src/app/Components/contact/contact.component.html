@@ -1,6 +1,6 @@
-<div class="container-5">
+<div class="container-5" id="contact">
   <div class="ppal-title">
-    <h2 id="contact">CONTACT</h2>
+    <h2 >CONTACT</h2>
   </div>
   <duet-alert *ngIf="message" variation="success" dismissible> Thank you for your message! It will be answered as soon as possible </duet-alert>
   <form [formGroup]="FormData" method="post" (ngSubmit)="onSubmit(FormData.value)">
