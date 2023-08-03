@@ -58,6 +58,7 @@ header {
 
 .nav__close {
   transform: var(--state-close);
+  z-index: 3;
 }
 
 .nav__icon {
@@ -79,6 +80,7 @@ header {
   font-family: "Unbounded";
   transform: var(--state-menu);
   transition: 0.3s transform;
+  z-index: 3;
 }
 
 .nav__item {
