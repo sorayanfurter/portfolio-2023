@@ -24,15 +24,17 @@
     grid-row: 2/3;
     justify-items: center;
     margin: 0px 40px 0px 40px;
-    max-height: fit-content;
+    max-height:max-content;
+    border-radius: 5px;
+    border: 2px solid black;
+    box-shadow: 5px 5px 0px 1px rgba(0, 0, 0, 1);
+
   }
 
   img {
-    grid-row: 2/3;
-    border-radius: 5px;
     width: 100%;
-    border: 2px solid black;
-    box-shadow: 5px 5px 0px 1px rgba(0, 0, 0, 1);
+    grid-column: 1/5;
+    grid-row: 2/3;
     margin-top: 0px;
     max-height: fit-content;
   }
@@ -41,17 +43,9 @@
     display: grid;
     grid-column: 1/5;
     grid-row: 3/4;
-    margin: 20px 40px 0px 40px;
-    justify-content: center;
-  }
-  p {
-    align-content: center;
-    align-self: center;
-    justify-content: center;
-    font-family: "Lato";
-    font-weight: 500;
+    margin: 40px 40px 0px 40px;
     text-align: center;
-    font-size: 14pt;
+    justify-content: center;
     background-color: whitesmoke;
     max-height: fit-content;
     border: 2px solid black;
@@ -59,17 +53,24 @@
     border-radius: 5px;
     padding: 25px 25px 25px 25px;
   }
+  p {
+    grid-column: 1/5;
+    font-family: "Lato";
+    font-weight: 500;
+    text-align: center;
+    font-size: 14pt;
+  }
 
   .sm-icons {
     display: grid;
     grid-column: 1/5;
-    grid-row: 4/5;
+    grid-row: 3/4;
     justify-content: center;
+    align-content: center;
     align-items: center;
-    vertical-align: middle;
-    margin-left: 4px;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
   a {
@@ -147,7 +148,7 @@
     display: grid;
     grid-column: 2/3;
     grid-row: 2/3;
-    margin-top: 0px;
+    margin: 0px;
     justify-items: center;
     align-self: center;
     max-height: max-content;
@@ -155,28 +156,32 @@
   }
 
   img {
-    width: 120%;
-    vertical-align: middle;
+    max-width: fit-content;
   }
 
   .text {
     display: grid;
     grid-column: 3/5;
     grid-row: 2/3;
-    margin: 0px 0px 0px 30px;
-    padding: 0px 0px 0px 20px;
+    margin: 0px 0px 0px 10px;
     justify-self: right;
+    max-height: fit-content;
   }
   p {
-    padding: 30px 50px 30px 50px;
-    font-size: 20px;
+    grid-column: 3/5;
+    text-align: center;
+    padding: 20px 20px 0px 20px;
+    font-size: 18px;
   }
 
   .sm-icons {
-    grid-column: 2/3;
+    grid-column: 3/5;
     grid-row: 2/3;
-    align-items: flex-end;
     justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin:0px;
+
   }
 }
 
@@ -202,32 +207,53 @@
     align-self: left;
     margin-top: 0;
     justify-items: center;
+    max-height: fit-content;
   }
 
   img {
-    width: 115%;
+    max-width: fit-content;
+
+
   }
 
   .text {
     grid-column: 3/5;
     grid-row: 2/3;
     margin: 0px 0px 0px 30px;
-    align-self: start;
-    justify-content: left;
+    text-align: center;
+    max-height: fit-content;
+
   }
 
   p {
-    padding: 50px 50px 50px 50px;
+    grid-column: 3/5;
+    vertical-align:bottom;
+    padding: 30px 30px 0px 30px;
+    font-size: 20px;
+    max-height: fit-content;
   }
 
   .sm-icons {
     grid-column: 3/5;
     grid-row: 2/3;
-    vertical-align: bottom;
-    margin: 0px 0px -20px 30px;
+    justify-content: center;
+
+    vertical-align:text-top;
+    margin: 0px 0px 30px 0px;
   }
 
   .fab {
     font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  p{
+    margin-top: 100px;
+    font-size: 30px;
+  }
+
+  .sm-icons{
+    margin-bottom: 60px;
   }
 }
