@@ -80,7 +80,6 @@
     grid-column: 1/5;
     font-size: 24px;
     font-family: "Lato";
-
     /*background-color: #eed2f7;*/
   }
 
@@ -136,9 +135,9 @@
     position: fixed;
     top: 0%;
     left: 50%; /* Set left to 50% */
-    transform: translate(-50%, -10%); /* Use transform to center horizontally */
+    transform: translate(-50%, 0%); /* Use transform to center horizontally */
     width: 80%;
-    height: 80%;
+    height: 100%;
     display: flex;
     place-items: center;
     justify-content: center;
@@ -155,6 +154,8 @@
     grid-column: 1/5;
     padding: 20px;
     z-index: 6;
+
+
   }
 
   .modal-content {
@@ -166,6 +167,7 @@
     backdrop-filter: blur(10px); /* Blurred effect */
     padding: 20px 20px 30px 20px;
     border-radius: 10px;
+
   }
 
   .modal-text {
