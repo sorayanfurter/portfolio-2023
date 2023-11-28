@@ -1,0 +1,16 @@
+<div class="modal" *ngIf="showModal && selectedCardId">
+  <p class="modal-text">Private cabins rentals website. Built using HTML/ CSS, Javascript.
+    Formspree was used for the contact form.</p>
+  <div class="modal_body">
+    <button class="close" (click)="onCloseClick()">X</button>
+  </div>
+</div>
+
+<div class="modal" id="modal2" *ngIf="showModal && modalId === cardId">
+  <p class="modal-text">Private cabins rentals website. Built using HTML/ CSS, Javascript.
+    Formspree was used for the contact form.</p>
+  <div class="modal_body">
+    <button class="close" (click)="onCloseClick()">X</button>
+  </div>
+</div>
+

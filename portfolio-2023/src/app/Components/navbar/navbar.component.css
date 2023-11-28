@@ -12,6 +12,8 @@ header {
   display: grid;
   grid-column: 1/-1;
   overflow: hidden;
+ /* background: rgba(255, 255, 255, 0.2); /* Semi-transparent background color */
+ /* backdrop-filter: blur(10px);*/
 
 }
 

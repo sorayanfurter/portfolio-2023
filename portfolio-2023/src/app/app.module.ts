@@ -14,6 +14,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ContactService } from './contact.service';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
+import { ModalComponent } from './modal/modal.component';
+
 
 
 @NgModule({
@@ -26,6 +28,8 @@ import { CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
     FooterComponent,
     SkillsComponent,
     ContactComponent,
+    ModalComponent,
+
 
 
  ],

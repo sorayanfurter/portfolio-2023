@@ -218,6 +218,8 @@
   .button {
     grid-row: 1/4;
     align-self: self-end;
+    margin-bottom: -35 px;
+
   }
 
   .sm-icons {
