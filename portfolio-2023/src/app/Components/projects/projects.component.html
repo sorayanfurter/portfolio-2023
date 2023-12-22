@@ -3,7 +3,7 @@
     <h2 class="about-me">PROJECTS</h2>
   </div>
   <div data-aos="fade-up" class="card-container">
-    <div class="card-proj" >
+    <div class="card-proj">
       <div class="card-text">
         <!--<h2 class="card-number">01</h2>!-->
         <h3 class="card-title">HOTEL WEBSITE</h3>
@@ -12,7 +12,7 @@
           Formspree was used for the contact form.
         </p> -->
         <div class="buttons">
-          <a href="https://fvkcollection.netlify.app/" class="btn-demo">DEMO</a>
+          <a href="https://fvk-collection.netlify.app/" class="btn-demo">DEMO</a>
           <a
             href="https://github.com/sorayanfurter/TPODesarrolloWeb"
             class="btn-github"
@@ -27,9 +27,12 @@
           width="100%"
         />
       </div>
-      <div class="hidden-text"><button class="modal_button" (click)="openModal(0, $event)">VIEW DETAILS</button></div>
+      <div class="hidden-text">
+        <button class="modal_button" (click)="openModal(0, $event)">
+          VIEW DETAILS
+        </button>
+      </div>
     </div>
-
 
     <div class="card-proj2">
       <div class="card-text">
@@ -55,8 +58,11 @@
       <div class="card-img">
         <img src="/assets/Vg-Database.png" alt="" width="100%" />
       </div>
-      <div class="hidden-text"><button class="modal_button" (click)="openModal(1, $event)">VIEW DETAILS</button></div>
-
+      <div class="hidden-text">
+        <button class="modal_button" (click)="openModal(1, $event)">
+          VIEW DETAILS
+        </button>
+      </div>
     </div>
 
     <div class="card-proj">
@@ -85,7 +91,11 @@
       <div class="card-img">
         <img src="/assets/Portal-examenes.png" alt="" width="100%" />
       </div>
-      <div class="hidden-text"><button class="modal_button"  (click)="openModal(2, $event)">VIEW DETAILS</button></div>
+      <div class="hidden-text">
+        <button class="modal_button" (click)="openModal(2, $event)">
+          VIEW DETAILS
+        </button>
+      </div>
     </div>
 
     <div class="card-proj2" data-cardId="4">
@@ -111,50 +121,76 @@
       <div class="card-img">
         <img src="/assets/Ecommerce.png" alt="" width="100%" />
       </div>
-      <div class="hidden-text"><button class="modal_button"  (click)="openModal(3, $event)" >VIEW DETAILS</button></div>
-    </div>
-  </div>
-  <div class="modal-overlay" *ngIf="showModal">
-    <div class="modal" >
-      <div class="modal-content">
-        <button class="close" (click)="closeModal()">&times;</button>
-        <ng-container *ngIf="selectedCardId === 0">
-          <p class="modal-text">Private cabins rentals website. Built using HTML/ CSS, Javascript.
-            Formspree was used for the contact form.</p>
-        </ng-container>
-        <ng-container *ngIf="selectedCardId === 1">
-          <p class="modal-text">This website was built using Angular and is connected to the
-            rawg-videogame-database API. It enables users to search for video
-            games by their name, release date, and rating. Users will have the
-            option to view screenshots and watch trailers of the selected video
-            game.</p>
-        </ng-container>
-        <ng-container *ngIf="selectedCardId === 2">
-          <p class="modal-text">Built using Angular/Java and designed for creating and taking
-            multiple-choice exams. Admins will be
-            have able to create exams, add questions with their respective scores,
-            and set time limits for users to answer. Additionally, admins can
-            organize the exams into different categories and create new ones. On
-            the other hand, users will be able to
-            take the exams available to them.</p>
-        </ng-container>
-        <ng-container *ngIf="selectedCardId === 3">
-            <ul class="modal-text">
-            <li>User Authentication.</li>
-            <li>Role-based Access</li>
-            <li>Product Upload: Ability to upload products with details (name, description, images, prices, quantity in stock).</li>
-            <li>Inventory Control: Manage and update product inventory, including adding, removing, or editing products.</li>
-            <li>Order Tracking, Status Updates and Details</li>
-            <li>Product Search: Ability to search for products based on keywords.</li>
-            </ul>
-
-        </ng-container>
-        <!-- Add other ng-container blocks for other card modals -->
+      <div class="hidden-text">
+        <button class="modal_button" (click)="openModal(3, $event)">
+          VIEW DETAILS
+        </button>
       </div>
     </div>
   </div>
+  <div class="modal-overlay" *ngIf="showModal">
+    <div class="modal">
+      <div class="modal-content">
+        <button class="close" (click)="closeModal()">&times;</button>
+        <ng-container *ngIf="selectedCardId === 0">
+          <p class="modal-text">Private cabins rentals website.</p>
+          <ul class="modal-text">
+            <li>Built with Angular</li>
+            <li>Formspree was used for the contact form.</li>
+          </ul>
+        </ng-container>
+        <ng-container *ngIf="selectedCardId === 1">
+          <ul class="modal-text">
+            <li>Built with Angular</li>
+            <li>Integration with the rawg-videogame-database API</li>
+            <li>
+              Users can search for video games by name, release date, and
+              rating.
+            </li>
+            <li>
+              Access viewing options for screenshots and trailers of selected
+              video games
+            </li>
+          </ul>
+        </ng-container>
+        <ng-container *ngIf="selectedCardId === 2">
+          <p class="modal-text">
+            This application was built using Angular on the frontend and Java on
+            the backend. It is designed for creating and taking multiple-choice
+            exams.
+          </p>
+          <ul class="modal-text">
+            <li>
+              Admins have the ability to: Create exams, add questions with their
+              respective scoring, and organize exams into distinct categories.
+              Set time constraints for users to respond.
+            </li>
+            <li>
+              Users can participate in available
+              examinations based on their permissions.
+            </li>
+          </ul>
+        </ng-container>
+        <ng-container *ngIf="selectedCardId === 3">
+          <ul class="modal-text">
+            <li>User Authentication.</li>
+            <li>Role-based Access</li>
+            <li>
+              Ability to upload products with details (name,
+              description, images, prices, quantity in stock).
+            </li>
+            <li>
+              Manage and update product inventory, including
+              adding, removing, or editing products.
+            </li>
+            <li>Order Tracking, Status Updates and Details</li>
+            <li>
+            Ability to search for products based on keywords.
+            </li>
+          </ul>
+        </ng-container>
 
-
-
-
+      </div>
+    </div>
+  </div>
 </div>

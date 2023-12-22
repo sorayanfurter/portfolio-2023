@@ -135,7 +135,7 @@
     position: fixed;
     top: 0%;
     left: 50%; /* Set left to 50% */
-    transform: translate(-50%, 0%); /* Use transform to center horizontally */
+    transform: translate(-50%, -10%); /* Use transform to center horizontally */
     width: 80%;
     height: 100%;
     display: flex;
@@ -154,17 +154,21 @@
     grid-column: 1/5;
     padding: 20px;
     z-index: 6;
-
-
   }
 
   .modal-content {
-    background: rgba(255, 255, 255, 0.4); /* White color with transparency */
-    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+
+    backdrop-filter: blur(15px);
+   /* background: rgba(255, 255, 255, 0.4); /* White color with transparency */
+   /* padding: 20px;
     border-radius: 10px;
     backdrop-filter: blur(10px); /* Blurred effect */
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Shadow effect */
-    backdrop-filter: blur(10px); /* Blurred effect */
+   /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Shadow effect */
+   /* backdrop-filter: blur(10px); /* Blurred effect */
     padding: 20px 20px 30px 20px;
     border-radius: 10px;
 
@@ -219,7 +223,7 @@
   }
 
   .modal-overlay{
-    transform: translate(-50%, 0%);
+    transform: translate(-50%, -10%);
   }
 
   .ppal-title {
@@ -301,7 +305,8 @@
   }
 
   img:hover {
-    background: rgba(170, 48, 241, 0.769);
+
+    background: rgba(109, 39, 189, 0.769);
     backdrop-filter: blur(10px);
     opacity: 0.3;
     cursor: pointer;
@@ -336,7 +341,8 @@
 
   .hidden-text:hover {
     opacity: 1; /* Revealed on hover */
-    background-color: #cc33ffa4;
+    background: rgba(109, 39, 189, 0.5);
+    backdrop-filter: blur(10px);
     z-index: 3;
   }
 
