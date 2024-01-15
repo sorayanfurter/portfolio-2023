@@ -74,7 +74,7 @@
 
   .icons {
     display: grid;
-    grid-column: 2/4;
+    grid-column: 1/5;
     grid-row: 3/4;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-gap: 30px;
@@ -87,10 +87,6 @@
     justify-items: center;
     text-align: center;
     justify-content: center;
-  }
-
-  .icon-title {
-    margin: 0px;
   }
 
   .icons-title {
@@ -106,6 +102,7 @@
     background-color: #e7daff;
     border-radius: 15px;
     width: 200px;
+    margin-bottom: 30px;
     margin-left: 40px;
   }
 
@@ -119,7 +116,7 @@
     );
     grid-gap: 30px;
     justify-content: center;
-    margin: 20px 20px 60px 20px;
+    margin: 40px 20px 60px 20px;
   }
 
   .softski-title {
