@@ -10,6 +10,7 @@
     overflow: hidden;
     margin-left: 0;
     margin-right: 0;
+    background-color: #f7f3ff;
   }
 
   .ppal-title {
@@ -24,27 +25,33 @@
 
   form {
     display: grid;
-    font-family: "Lato";
+    font-family: 'DM Sans';
     grid-column: 1/5;
     grid-row: 3/4;
     padding: 40px 40px 40px 40px;
-    border: 2px solid black;
+    border: 0px solid #ceb5ff;
     border-radius: 5px;
-    background-color: whitesmoke;
+    background-color: #efe7ff;
     margin: 0px 40px 40px 40px;
   }
 
   label {
     margin-bottom: 30px;
+    color:  #6545a4;
+    font-weight: 500;
   }
 
   #form-button {
     overflow: visible;
     background: none;
-    border: 1px solid black;
     margin-top: 10px;
     padding: 10px;
     border-radius: 50px;
+    border: 2px solid#6545a4;;
+
+    font-family: 'DM Sans';
+    font-weight: 500;
+    color: #6545a4 ;
   }
 
   textarea {
@@ -60,7 +67,7 @@
   [type="email"],
   textarea {
     background: none;
-    border: solid 1px #474544;
+    border: solid 2px#6545a4;
     color: #474544;
     font-size: 1em;
     font-weight: 400;
@@ -94,9 +101,8 @@
   }
 
   button {
-    border: 2px solid black;
     border-radius: 30px;
-    box-shadow: black 4px 4px 0 0;
+
   }
 }
 
