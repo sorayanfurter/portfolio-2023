@@ -1,12 +1,13 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  background: rgb(168,98,234);
+
 }
 
 header {
   margin: 0;
   grid-column: 1/-1;
+
 }
 
 .container {
@@ -29,8 +30,8 @@ header {
   align-items: center;
   grid-template-columns: repeat(2, max-content);
   z-index: 3;
-
   grid-column: 1/-1;
+  background-color: #a862ea;
 }
 
 .nav:target {
