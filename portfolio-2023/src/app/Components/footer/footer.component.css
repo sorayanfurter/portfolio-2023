@@ -1,0 +1,72 @@
+*{
+  background-color: #6545a4;
+  margin-top: 0px;
+  }
+
+  .sm-icons {
+    display: grid;
+    grid-column: 1/5;
+    grid-row: 3/4;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 10px;
+  }
+
+  a {
+    text-align: center;
+    color:#f7f3ff;
+    padding: 10px;
+  }
+
+  ul {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0px;
+    list-style-type: none;
+    font-size: 1rem;
+    padding: 0px;
+  }
+
+  li {
+    padding: 0.5rem;
+  }
+
+  .fab {
+    font-size: 1.5rem;
+  }
+
+  /* transition for social icon hover animation */
+
+  .fa-linkedin,
+  .fa-github,
+  .fa-square-behance {
+    transition: 0.4s;
+    cursor: pointer;
+  }
+
+  /* social media icons hover color */
+
+  .fa-linkedin:hover,
+  .fa-linkedin:focus {
+    color: #1da1f2;
+    transform: scale(1.1);
+  }
+
+  .fa-square-behance:hover,
+  .fa-square-behance:focus {
+    color: #1766f7;
+    transform: scale(1.1);
+  }
+
+  .fa-github:hover,
+  .fa-github:focus {
+    color: #000;
+    transform: scale(1.1);
+  }
+

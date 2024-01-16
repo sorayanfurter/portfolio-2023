@@ -10,7 +10,8 @@
     overflow: hidden;
     margin-left: 0;
     margin-right: 0;
-    background-color: #f7f3ff;
+    background: rgb(239,231,255);
+background: linear-gradient(180deg, rgba(239,231,255,1) 0%, rgba(168,98,234,1) 100%);
   }
 
   .ppal-title {
@@ -28,10 +29,10 @@
     font-family: 'DM Sans';
     grid-column: 1/5;
     grid-row: 3/4;
-    padding: 40px 40px 40px 40px;
+    padding: 0px 40px 40px 40px;
     border: 0px solid #ceb5ff;
     border-radius: 5px;
-    background-color: #efe7ff;
+    background-color: transparent;
     margin: 0px 40px 40px 40px;
   }
 
@@ -47,8 +48,7 @@
     margin-top: 10px;
     padding: 10px;
     border-radius: 50px;
-    border: 2px solid#6545a4;;
-
+    border: 2px solid#6545a4;
     font-family: 'DM Sans';
     font-weight: 500;
     color: #6545a4 ;
@@ -68,7 +68,6 @@
   textarea {
     background: none;
     border: solid 2px#6545a4;
-    color: #474544;
     font-size: 1em;
     font-weight: 400;
     margin-bottom: 10px;
@@ -94,7 +93,7 @@
 
   duet-alert {
     display: grid;
-    grid-column: 1/5;
+    grid-column: 2/4;
     grid-row: 2/3;
     justify-self: center;
     margin: 0px 40px 0px 40px;
@@ -112,7 +111,7 @@
   }
   form {
     grid-column: 2/5;
-    margin: 0px 0px 150px 0px;
+    margin: 0px 0px 50px 0px;
   }
 
   duet-alert{
