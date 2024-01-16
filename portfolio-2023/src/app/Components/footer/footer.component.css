@@ -1,5 +1,5 @@
 *{
-  background-color: #6545a4;
+  background-color: black;
   margin-top: 0px;
   }
 
@@ -18,7 +18,7 @@
 
   a {
     text-align: center;
-    color:#f7f3ff;
+    color:#6545a4;
     padding: 10px;
   }
 
@@ -54,19 +54,19 @@
 
   .fa-linkedin:hover,
   .fa-linkedin:focus {
-    color: #1da1f2;
+    color: #ceb5ff;
     transform: scale(1.1);
   }
 
   .fa-square-behance:hover,
   .fa-square-behance:focus {
-    color: #1766f7;
+    color:#ceb5ff;
     transform: scale(1.1);
   }
 
   .fa-github:hover,
   .fa-github:focus {
-    color: #000;
+    color: #ceb5ff;
     transform: scale(1.1);
   }
 

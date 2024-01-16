@@ -75,7 +75,7 @@
   }
 
   .hello-fontweight , .title-fontweight{
-    font-family: 'Unbounded', cursive;
+    font-family: 'DM Sans', cursive;
     font-weight: 300;
   }
 
@@ -97,7 +97,6 @@
     background-color: rgba(255, 255, 255, 0);
     border: 2px solid #000000;
     border-radius: 30px;
-    box-shadow: #000000 4px 4px 0 0;
     color: #000000;
     cursor: pointer;
     font-family: 'Inter';
@@ -113,7 +112,7 @@
   }
 
   .button-style:hover {
-    background-color: #fff;
+    background-color:#ceb5ff;
   }
 
   .button-style:active {

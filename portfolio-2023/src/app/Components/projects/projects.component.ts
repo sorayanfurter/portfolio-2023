@@ -6,7 +6,7 @@ import { Component, ElementRef, Input, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent{
-
+/*
   showModal: boolean = false;
   selectedCardId: number | null = null;
   modalPosition: { top: string, bottom: string } = { top: '0', bottom: '0' };
@@ -30,7 +30,7 @@ export class ProjectsComponent{
   closeModal() {
     this.showModal = false;
     this.selectedCardId = null;
-  }
+  }*/
 }
 
 
