@@ -2,8 +2,6 @@
 
 @media (min-width: 320px) {
   main {
-    width: 100%;
-    height: 100%;
       background: rgb(168,98,234);
       background: linear-gradient(0deg, rgba(168,98,234,1) 0%, rgba(247,243,255,1) 0%, rgba(206,181,255,1) 49%, rgba(168,98,234,1) 100%);
 
@@ -35,6 +33,7 @@
     justify-content: center;
     text-align: center;
     align-content: center;
+    margin-bottom: 0px;
 
   }
 

@@ -13,14 +13,9 @@ header {
 .container {
   display: grid;
   grid-column: 1/-1;
-  overflow: hidden;
- /* background: rgba(255, 255, 255, 0.2); /* Semi-transparent background color */
- /* backdrop-filter: blur(10px);*/
-
 }
 
 .nav {
-
   --state-close: scale(0);
   --state-hamburguer: scale(1);
   --state-menu: translate(-100%);
@@ -54,10 +49,12 @@ header {
   grid-column: -2/-1;
   grid-row: 1/2;
   transition: 0.4s transform;
+  z-index: 1000;
 }
 
 .nav__hamburguer {
   transform: var(--state-hamburguer);
+  z-index: 1000;
 }
 
 .nav__close {
@@ -109,8 +106,8 @@ header {
     top: 0;
     /*background-color:rgba(255, 255, 255, 0.6);*/
     background-color: transparent
-  }
 
+  }
   .nav:target {
     --state-close: scale(0);
   }
@@ -148,4 +145,8 @@ header {
   backdrop-filter: blur(10px)
 
  }
+
+ .fade-in {
+  animation: fadeIn 1.3s ease-in-out;
+}
 }
