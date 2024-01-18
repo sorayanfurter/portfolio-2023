@@ -100,6 +100,7 @@ header {
 }
 
 @media (min-width: 768px) {
+
   .nav {
     --state-hamburguer: scale(0);
     --state-menu: translate(0);
@@ -107,8 +108,7 @@ header {
     position: fixed;
     top: 0;
     /*background-color:rgba(255, 255, 255, 0.6);*/
-    background-color: transparent;
-
+    background-color: transparent
   }
 
   .nav:target {
@@ -138,4 +138,14 @@ header {
     letter-spacing: none;
     color: black;
   }
+
+  .nav__link:hover{
+    color: hsl(260, 41%, 46%);
+  }
+
+  .glass-effect {
+    background: hsl(260, 100%, 85%, 0.8); /* Initial background */
+  backdrop-filter: blur(10px)
+
+ }
 }

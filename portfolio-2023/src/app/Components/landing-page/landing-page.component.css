@@ -188,6 +188,8 @@
     justify-self: center;
     align-self: end;
     width: 20%;
+    margin-left: 70px;
+    margin-bottom: -20px;
   }
 
   .hello {
